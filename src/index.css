@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter+Tight:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #0C1410;
+  --surface: #15211B;
+  --text: #F2F7F1;
+  --muted: #7A8C7F;
+  --accent: #3DF08C;
+  --accent2: #FF7A45;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter Tight', sans-serif;
+  letter-spacing: -0.03em;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Sora', sans-serif;
+}
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+*::-webkit-scrollbar { display: none; }
+
+* { -webkit-tap-highlight-color: transparent; }
